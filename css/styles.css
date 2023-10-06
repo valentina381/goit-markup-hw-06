@@ -11,6 +11,8 @@ body {
 img {
     display: block;
     max-width: 100%;
+    /*mobile*/
+    object-fit: contain;
 }
 ul {
     margin: 0;
@@ -179,7 +181,7 @@ p {
 }
 
 .page-title {
-    color: #FFFFFF;
+    /*color: #FFFFFF;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -188,9 +190,19 @@ p {
     margin-right: auto;
     margin-bottom: 48px;
     letter-spacing: 0.02em;
+    max-width: 496px;*/
+    /*mobile*/
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    letter-spacing: 0.72px;
     max-width: 496px;
-    justify-content: center;
-    align-items: center;
+    text-transform: capitalize;
 }
 
 /*section 2*/
@@ -223,14 +235,23 @@ p {
 }
 
 .our-benefits {
-    line-height: 24px;
+    /*line-height: 24px;
     letter-spacing: 0.4px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px; 
+    margin-bottom: 8px; */
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: #2e2f42;
+    margin-bottom: 8px;
 }
 .our-benefits .text {
     width: 264px;
@@ -239,11 +260,14 @@ p {
 }
 .our-benefits-list {
     display: flex;
-    gap: 24px;
+    /*gap: 24px;*/
+    /*mobile*/
+    flex-wrap: wrap;
+    gap: 72px;
 }
-.our-benefits-list-items {
-    width: calc((100% - 72px) / 4); 
-}
+/*.our-benefits-list-items {
+    width: calc((100% - 72px) / 4);
+}*/
 .box-our-benefits {
     display: flex;
     width: 264px;
@@ -255,6 +279,10 @@ p {
     margin-bottom: 8px;
     align-items: center;
     justify-content: center;
+}
+/*mobile*/
+.simply-try {
+    display: none;
 }
 .svg-item {
     position: absolute;
@@ -273,7 +301,7 @@ p {
 }
 .our-team-list-items {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    /*width: calc((100% - 72px) / 4);*/
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -286,7 +314,12 @@ p {
 }
 .our-team-list {
     display: flex;
-    gap: 24px;
+    /*gap: 24px;*/
+    gap: 72px;
+    /*mobile*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .job-name {
     margin-bottom: 8px;
@@ -340,7 +373,7 @@ p {
     border-top: none;
 }
 .our-portfolio-items {
-    width: calc((100% - 48px) / 3);
+    /*width: calc((100% - 48px) / 3);*/
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -524,11 +557,11 @@ textarea {
     visibility: hidden;
     pointer-events: none;
 }
-.is-open {
+/*.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    }
+    }*/
 .modal {
     width: 408px;
     min-height: 584px;
