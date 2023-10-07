@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -11,8 +11,7 @@ body {
 img {
     display: block;
     max-width: 100%;
-    /*mobile*/
-    object-fit: contain;
+    object-fit: cover;
 }
 ul {
     margin: 0;
@@ -30,16 +29,16 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+margin: 0;
 }
 .list {
     list-style: none;
     padding-left: 0;
     margin: 0;
-  }
-  address {
+}
+address {
     font-style: normal;
-  }
+}
 /*header*/
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -49,6 +48,7 @@ p {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    gap: 7;
 }
 .logo .studio {
     font-family: "Raleway", sans-serif;
@@ -100,7 +100,7 @@ p {
     width: 100%;
     background-color: #404bbf;
     border-radius: 2px;
-  }
+}
 .address {
     font-style: normal;
     margin: auto;
@@ -181,24 +181,14 @@ p {
 }
 
 .page-title {
-    /*color: #FFFFFF;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
-    letter-spacing: 0.02em;
-    max-width: 496px;*/
-    /*mobile*/
     color: #FFFFFF;
-    font-size: 36px;
     font-weight: 700;
-    line-height: 1.11;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    max-width: 496px;
+    font-size: 36px;
+    line-height: 1.11;
     margin-bottom: 72px;
     letter-spacing: 0.72px;
     max-width: 496px;
@@ -221,7 +211,7 @@ p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 .our-portfolio-title,
 .our-team-title {
     font-size: 36px;
@@ -235,21 +225,13 @@ p {
 }
 
 .our-benefits {
-    /*line-height: 24px;
-    letter-spacing: 0.4px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px; */
     text-align: center;
-    line-height: 24px;
-    letter-spacing: 0.4px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.72px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
 }
@@ -260,14 +242,15 @@ p {
 }
 .our-benefits-list {
     display: flex;
-    /*gap: 24px;*/
-    /*mobile*/
     flex-wrap: wrap;
     gap: 72px;
 }
-/*.our-benefits-list-items {
-    width: calc((100% - 72px) / 4);
-}*/
+.our-benefits-box {
+    display: none;
+}
+.our-benefits-list-items {
+    width: 100%;
+}
 .box-our-benefits {
     display: flex;
     width: 264px;
@@ -279,10 +262,6 @@ p {
     margin-bottom: 8px;
     align-items: center;
     justify-content: center;
-}
-/*mobile*/
-.simply-try {
-    display: none;
 }
 .svg-item {
     position: absolute;
@@ -300,10 +279,19 @@ p {
     padding: 120px 0;
 }
 .our-team-list-items {
+    margin: 0 auto;
+    width: 100%;
     background-color: #FFFFFF;
-    /*width: calc((100% - 72px) / 4);*/
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.our-people {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: #2e2f42;
+    margin-bottom: 8px; 
 }
 .our-team-names {
     text-align: center;
@@ -314,12 +302,11 @@ p {
 }
 .our-team-list {
     display: flex;
-    /*gap: 24px;*/
     gap: 72px;
-    /*mobile*/
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 13px; */
 }
 .job-name {
     margin-bottom: 8px;
@@ -373,7 +360,7 @@ p {
     border-top: none;
 }
 .our-portfolio-items {
-    /*width: calc((100% - 48px) / 3);*/
+    width: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -407,11 +394,12 @@ p {
     transform: translatey(0);
 }
 .text {
-   font-size: 16px;
-   text-align: left; 
-   line-height: 24px;
-    letter-spacing: 0.32px;
+font-size: 16px;
+text-align: left; 
+line-height: 24px;
+letter-spacing: 0.32px;
 }
+
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
