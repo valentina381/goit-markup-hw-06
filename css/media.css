@@ -97,6 +97,7 @@
 .social-media-text {
   text-align: left;
 }
+}
 
 @media (min-width: 1158px) {
   /*header*/
@@ -120,8 +121,16 @@
       background-color: #404bbf;
       border-radius: 2px;
     }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
     .header-nav-list {
       display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 40px;
     }
     .address {
       display: flex;
@@ -197,6 +206,11 @@
   .footer-container {
       display: flex;
       justify-content: center;
+  }
+  .footer-text-container {
+    width: 264px;
+    height: 72px;
+    margin-right: 120px;
   }
   .subscribe-text {
     text-align: left;
