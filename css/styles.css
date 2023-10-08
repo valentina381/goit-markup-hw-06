@@ -49,6 +49,7 @@ address {
     margin: 0 auto;
     padding: 0 15px;
     gap: 7;
+    min-width: 320px;
 }
 .logo .studio {
     font-family: "Raleway", sans-serif;
@@ -137,6 +138,20 @@ address {
 .header-address {
     display: flex;
     gap: 40px;
+}
+.menu-toggle {
+    min-height: 24px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 /*section 1*/
@@ -306,7 +321,7 @@ address {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding: 13px; */
+    padding: 13px;
 }
 .job-name {
     margin-bottom: 8px;
@@ -696,4 +711,25 @@ textarea {
     color: #4d5ae5;
     display: inline;
 }
-/*modal end*/
+
+/*mobile-menu*/
+
+.menu-container {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 72px 16px 40px;
+}
+.mobile-menu-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #e7e9fc;
+}
