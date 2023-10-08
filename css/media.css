@@ -13,6 +13,13 @@
   .our-benefits {
     text-align: start;
   }
+  .container {
+    max-width: 768px;
+  }
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/tabbackground.jpg);
+    }
   .our-benefits-list {
    gap: 24px;
   }
@@ -40,48 +47,181 @@
   .our-portfolio-items {
     width: calc((100% - 24px) / 2);
   }
+  .current {
+    position: relative;
+    color: #404bbf;
 }
+.header-menu-button {
+  display: none;
+}
+.current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #404BBF;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+.header-address {
+  display: inline;
+}
+.header-nav-list {
+  display: flex;
+}
+.footer-container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  column-gap: 24px;
+  row-gap: 108px;
+}
+.subscribe-text {
+  margin: 0;
+  text-align: left;
+}
+.footer-text {
+  margin-bottom: 0;
+}
+.footer-button {
+  margin-left: 24px;
+}
+.footer-logo {
+  text-align: left;
+  padding-bottom: 17.5px;
+}
+.social-media-text {
+  text-align: left;
+}
+
 @media (min-width: 1158px) {
+  /*header*/
+  .container {
+      max-width: 1158px;
+      padding: 0 15px;
+  }
+  .current {
+      position: relative;
+      color: #404bbf;
+  }
+  .current::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid #404BBF;
+      left: 0;
+      bottom: -1px;
+      height: 4px;
+      width: 100%;
+      background-color: #404bbf;
+      border-radius: 2px;
+    }
+    .header-nav-list {
+      display: flex;
+    }
+    .address {
+      display: flex;
+    }
+  /*section 1*/
   .page-title {
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 48px;
-    letter-spacing: 0.02em;
-    text-transform: none;
-  } 
+      font-size: 56px;
+      line-height: 1.07;
+      text-align: center;
+      margin-bottom: 48px;
+      letter-spacing: 0.02em;
+      max-width: 496px;
+      justify-content: center;
+      align-items: center;
+      text-transform: none;
+  }
+  
+  /*section 2*/
   .our-benefits {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    text-align: start;
-  } 
+      letter-spacing: 0.4px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: left;
+  }
   .our-benefits-list {
-    flex-wrap: wrap;
-    gap: 24px;
+      display: flex;
+      gap: 24px;
   }
   .our-benefits-list-items {
-    width: calc((100% - 72px) / 4);
+      width: calc((100% - 72px) / 4); 
   }
   .our-benefits-box {
     display: flex;
+  }
+  /*Section 3*/
+  .our-team-list-items {
+      width: calc((100% - 72px) / 4);
+  }
+  .our-team-list {
+      gap: 24px;
+  }
+  /*Section 4*/
+
+  .our-portfolio-items {
+      width: calc((100% - 48px) / 3);
+  }
+  .our-portfolio-items:hover .overlay {
+      transform: translatey(0);
+  }
+  .text {
+     font-size: 16px;
+     text-align: left; 
+     line-height: 24px;
+      letter-spacing: 0.32px;
+  }
+  .footer {
+      padding: 100px 0;
+  }
+  .footer .logo {
+      display: inline-block;
+      margin-bottom: 16px;
+  }
+  .footer .text {
+      color: #F4F4FD;
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 120px
+  }
+  .footer-text {
+      margin-right: 120px;
+  }
+  .footer-container {
+      display: flex;
+      justify-content: center;
+  }
+  .subscribe-text {
+    text-align: left;
+  }
+  .footer-form {
+      display: flex;
+      gap: 24px;
+  }
+  .footer-icon {
+      margin-left: 16px;
+  }
+  .footer-icons {
+      margin-right: auto;
+  }
 }
-.our-people {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-}
-.our-team-list-items {
-  width: calc((100% - 72px) / 4);
-}
-.our-team-list {
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.our-portfolio-items {
-  width: calc((100% - 48px) / 3);
-}
-}
+
+@media only screen and (min-width: 768) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/tabbackground@2x.jpg);
+    }
+  }
+  @media only screen and (min-width: 1158) and (min-resolution: 192dpi) {
+    .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office@2x.jpg);
+    }
+  }
