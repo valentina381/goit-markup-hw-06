@@ -67,8 +67,6 @@ address {
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.54px;
-    margin-right: 76px;
-    padding: 17px;
 }
 .nav-list {
     color: #2E2F42;
@@ -167,7 +165,7 @@ address {
 } 
 .section-one {
     background-color: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/mobbackground.jpg);
     max-width: 1440px;
@@ -200,7 +198,7 @@ address {
 
 /*section 2*/
 .our-benefits-section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .visually-hidden {
@@ -232,7 +230,6 @@ address {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    font-size: 24px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -416,7 +413,6 @@ address {
 }
 .footer-text {
     width: 288px;
-    height: 72px;
     display: flex;
     align-items: start;
     justify-content: start;
@@ -522,9 +518,6 @@ address {
 .footer-logo {
     text-align: center;
 }
-
-
-
 textarea {
     resize: none;
 }

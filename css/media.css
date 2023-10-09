@@ -6,7 +6,7 @@
     display: none;
   }
   .logo {
-    padding: 16px;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1157.98px) {
@@ -16,16 +16,25 @@
   .container {
     max-width: 768px;
   }
+  .address {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  .logo {
+    margin-right: 120px;
+  }
   .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/tabbackground.jpg);
     }
+    .page-title {
+      font-size: 56px;
+    }
   .our-benefits-list {
-   gap: 24px;
+   gap: 72px 24px;
   }
   .our-benefits-list-items {
     width: calc((100% - 24px) / 2);
-    padding-bottom: 72px;
   }
   .our-benefits-text {
     font-weight: 500;
@@ -33,7 +42,7 @@
     letter-spacing: 0.32px;
   }
   .our-team-list {
-    gap: 24px;
+    gap: 72px 24px;
     flex-wrap: wrap;
     padding-right: 108px;
     padding-left: 108px;
@@ -75,10 +84,11 @@
 .footer-container {
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
   padding-left: 0;
   column-gap: 24px;
-  row-gap: 108px;
+  row-gap: 72px;
+  min-width: 550px;
+  padding-left: 108px;
 }
 .subscribe-text {
   margin: 0;
@@ -147,6 +157,9 @@
       align-items: center;
       text-transform: none;
   }
+  .section-one {
+    padding: 188px 0;
+  }
   
   /*section 2*/
   .our-benefits {
@@ -187,32 +200,33 @@
      line-height: 24px;
       letter-spacing: 0.32px;
   }
-  .footer {
-      padding: 100px 0;
-  }
   .footer .logo {
       display: inline-block;
       margin-bottom: 16px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .footer .text {
       color: #F4F4FD;
       font-size: 16px;
       font-weight: 400;
-      margin-right: 120px
-  }
-  .footer-text {
-      margin-right: 120px;
+      margin-bottom: 0;
   }
   .footer-container {
       display: flex;
       justify-content: center;
+      align-items: center;
   }
   .footer-text-container {
-    width: 264px;
-    height: 72px;
     margin-right: 120px;
   }
   .subscribe-text {
+    text-align: left;
+  }
+  .social-media-text {
     text-align: left;
   }
   .footer-form {
@@ -227,13 +241,13 @@
   }
 }
 
-@media only screen and (min-width: 768) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/tabbackground@2x.jpg);
     }
   }
-  @media only screen and (min-width: 1158) and (min-resolution: 192dpi) {
+  @media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office@2x.jpg);
